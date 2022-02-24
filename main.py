@@ -95,7 +95,7 @@ class Client:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('csv_path', nargs='?', help='CSV file containing transactions')
+    parser.add_argument('csv_path', help='CSV file containing transactions')
 
     args = parser.parse_args()
     Transaction.parse_transaction_csv(args.csv_path)
